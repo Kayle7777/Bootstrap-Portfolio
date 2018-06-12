@@ -9,6 +9,9 @@
   font-weight: bold;
 }
 
+#aboutMe {
+}
+
 #audioButton {
   visibility:hidden;
 }
@@ -128,13 +131,17 @@ textarea[name="message"] {
 }
 
 footer {
-  width:100%;
-  position: relative;
-  padding: 11px;
-  bottom:0;
-  left:0;
-  margin-top:200px;
+  margin-top:175px;
   border-top: 5px solid #4aaaa5;
-  text-align: center;
   background-color: #bfbfbf;
+}
+
+/* I need this, can't figure out a way to do it with bootstrap only */
+
+@media screen and (max-width: 460px) {
+  #aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
