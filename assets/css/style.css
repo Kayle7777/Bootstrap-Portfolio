@@ -1,15 +1,16 @@
 #myName {
   font-family: 'Georgia', Times, Times New Roman, serif;
-  /* float:left; */
   background-color: #4aaaa5;
-  text-align: center;
   color: white;
-  padding: 13px;
   font-size: 1.5em;
   font-weight: bold;
+  margin-bottom:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#aboutMe {
+#bodyHeader {
 }
 
 #audioButton {
@@ -47,9 +48,6 @@ header {
   color: grey;
   padding: 10px 0 10px 0;
   cursor: pointer;
-  /* float: right; */
-  /* text-align: center; */
-  /* width:32%; */
 }
 
 .img-responsive {
@@ -57,7 +55,7 @@ header {
   max-width:240px;
 }
 
-.bodyFrame {
+.wrapper {
   max-width: 960px;
   /* margin:auto; */
   /* overflow:auto; */
@@ -72,7 +70,7 @@ header {
    margin-bottom: 10px;
 }
 
-.bodyFrame h3 {
+.wrapper h3 {
   font-family:'Georgia', Times, Times New Roman, serif;
   color:#4aaaa5;
   font-weight: bold;
@@ -80,16 +78,16 @@ header {
   /* margin-top: 1.5rem; */
 }
 
-.bodyFrame p {
+.wrapper p {
   text-indent: 1rem;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.bodyFrame form {
+.wrapper form {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.aboutMeImage {
+.bodyHeaderImage {
   /* position:relative; */
   /* float:left; */
   /* margin-right: 20px; */
@@ -110,25 +108,6 @@ textarea[name="message"] {
   background-color: orange;
 }
 
-.portfolioPics {
-  float:left;
-  margin:auto;
-  overflow:auto;
-  border: 20px solid white
-}
-
-.portfolioPics button {
-  height:200px;
-  width:200px;
-  border-radius:12px;
-}
-
-.portfolioPics button div {
-  margin-top: 150px;
-  color: white;
-  background-color: #4aaaa5;
-  width: 100%;
-}
 
 footer {
   margin-top:175px;
@@ -138,8 +117,14 @@ footer {
 
 /* I need this, can't figure out a way to do it with bootstrap only */
 
+@media screen and (max-width: 768px) {
+  #myName {
+    height:50px;
+  }
+}
+
 @media screen and (max-width: 460px) {
-  #aboutMe {
+  #bodyHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
