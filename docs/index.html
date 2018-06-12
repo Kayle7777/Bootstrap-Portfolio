@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jesse Webb</title>
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
 
-<header>
-    <div class="header">
+<header class="container header">
+    <div class="row justify-content-between">
 
-      <div id="myName">
+      <div class="col-md-3" id="myName">
         <h2>Jesse Webb</h2>
       </div>
-        <nav class="buttonContainer">
-          <div>
+        <nav class="col-md-4 align-self-center float-right">
+          <div class="buttonContainer">
               <button class="headerButton" onclick="location.href='index.html'">About</button>
 
               <button class="headerButton" onclick="location.href='portfolio.html'">Portfolio</button>
@@ -26,21 +31,27 @@
 </header>
 
 <!-- body section start -->
-<div class="bodyFrame">
-      <div>
-        <h2>About Me</h2>
+<div class="container bodyFrame">
+      <div class="row">
+        <h3 class="col-md-12">About Me</h3>
       </div>
 
       <div id="pBorder"></div>
-      <img class="aboutMeImage" src="https://picsum.photos/200/?random">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui sem. Vivamus in sodales orci, in interdum mi. Etiam at pulvinar mi. Vestibulum eu libero metus. Vivamus ex tortor, laoreet ullamcorper enim et, sollicitudin pretium ante. Duis suscipit placerat diam nec luctus. Maecenas volutpat porta tellus in tincidunt. Aenean feugiat felis a libero posuere consequat. Sed hendrerit justo vel accumsan pellentesque. Etiam faucibus nisi turpis, eget volutpat augue tincidunt ut. In tincidunt, ipsum et fermentum auctor, enim mi consectetur leo, quis ultrices ligula libero ac lacus. Praesent urna nisl, vulputate eget magna sed, egestas consequat enim. In in aliquam felis, et laoreet nulla. Donec interdum feugiat lacus quis fringilla. Maecenas faucibus egestas nisi, in suscipit orci eleifend sit amet. Aliquam consequat nibh urna, non rhoncus elit tristique malesuada.
+    <div class="row">
+      <img class="col-md-4 img-responsive aboutMeImage" src="https://picsum.photos/200/?random">
+
+      <p class="col-md-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui sem. Vivamus in sodales orci, in interdum mi. Etiam at pulvinar mi. Vestibulum eu libero metus. Vivamus ex tortor, laoreet ullamcorper enim et, sollicitudin pretium ante. Duis suscipit placerat diam nec luctus. Maecenas volutpat porta tellus in tincidunt. Aenean feugiat felis a libero posuere consequat. Sed hendrerit justo vel accumsan pellentesque. Etiam faucibus nisi turpis, eget volutpat augue tincidunt ut.
       </p>
+    </div>
+
       <br>
+
       <p>
         Duis sit amet auctor mi, eget dictum neque. Nulla eget urna sit amet mauris ultricies semper. Cras quis ultricies diam. Etiam et ex laoreet, tempus mauris eget, pharetra odio. Quisque eu sagittis ligula, vestibulum imperdiet libero. Aenean laoreet hendrerit interdum. Nullam nec porta lorem, non cursus lectus. Sed euismod, justo et viverra posuere, ligula nibh laoreet lectus, quis facilisis dolor libero id erat. Donec sapien orci, gravida eu faucibus nec, eleifend eu turpis. Suspendisse efficitur sagittis vulputate. Vestibulum ipsum diam, cursus at aliquet non, molestie eget mi. Suspendisse potenti. Donec in rutrum lectus. Vestibulum porta, nibh eget laoreet lobortis, magna ex vulputate dolor, in tempus odio justo a metus. Sed et dolor dui.
         <br><br>
         Sed tincidunt consequat ornare. Nulla quam leo, vulputate non luctus id, dignissim vitae nisl. Donec porta nibh ac turpis ullamcorper, suscipit blandit tellus molestie. In hendrerit consectetur convallis. Vivamus pharetra, sapien vitae feugiat dictum, est ante rhoncus lectus, non sagittis nibh nibh et arcu. Duis et ante ut leo congue ultricies. Vestibulum non lacus diam. Cras imperdiet, mauris fringilla euismod mollis, metus ipsum fermentum lacus, id vehicula nisl quam eget elit. Duis vitae congue nunc, posuere vestibulum tortor. Etiam orci nisi, laoreet nec ornare nec, tristique ac ante. Nulla ornare tempor eros, in imperdiet neque feugiat in.
       </p>
+
 </div>
 <!-- body section end -->
 
