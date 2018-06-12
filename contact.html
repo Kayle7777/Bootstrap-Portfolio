@@ -9,14 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <script>
-  function play() {
-    var audio = document.getElementById("audioButton");
-    audio.style = "visibility: visible";
-    audio.play();
-    document.getElementById("textarea").value = "I don't know how to do forms! lol! :) :)"
-  }
-  </script>
+  <script src="./assets/script.js"></script>
 </head>
 <body>
 
@@ -57,16 +50,16 @@
 
   <div id="pBorder"></div>
 
-      <form>
-        <p>Name</p><br>
+      <form class="container">
+        <p class="text-muted font-weight-bold">Name</p>
         <input type="text" name="name" placeholder="Jesse Webb">
         <br><br>
-        <p>Email</p><br>
+        <p class="text-muted font-weight-bold">Email</p>
         <input type="text" name="email" placeholder="example@gmail.com">
         <br><br>
-        <p>Message</p><br>
+        <p class="text-muted font-weight-bold">Message</p>
         <textarea id="textarea" type="text" name="message"></textarea>
-        <br><br>
+        <br>
         <input id="submitButton" type="button" onclick="play()" value="Submit">
         <audio controls id="audioButton" src="./assets/justcantgetenough.mp3"></audio>
       </form>
