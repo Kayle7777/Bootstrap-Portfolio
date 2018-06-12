@@ -48,8 +48,8 @@ header {
   padding: 10px 0 10px 0;
   cursor: pointer;
   /* float: right; */
-  text-align: center;
-  width:32%;
+  /* text-align: center; */
+  /* width:32%; */
 }
 
 .img-responsive {

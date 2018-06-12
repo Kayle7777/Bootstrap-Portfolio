@@ -26,13 +26,23 @@
       <div class="col-md-3" id="myName">
         <h2>Jesse Webb</h2>
       </div>
-        <nav class="col-md-4 align-self-center float-right">
-          <div class="buttonContainer">
-              <button class="headerButton" onclick="location.href='index.html'">About</button>
+        <nav class="col-md-4 navbar navbar-expand-md navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-              <button class="headerButton" onclick="location.href='portfolio.html'">Portfolio</button>
-
-              <button class="headerButton" onclick="location.href='contact.html'">Contact</button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item headerButton">
+                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item headerButton">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item headerButton active">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </nav>
     </div>
