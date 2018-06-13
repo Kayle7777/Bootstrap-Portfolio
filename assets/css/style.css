@@ -117,6 +117,9 @@ textarea[name="message"] {
 .footer {
   border-top: 5px solid #4aaaa5;
   background-color: #bfbfbf;
+  position:absolute;
+  bottom:0;
+  top:0;
 }
 
 /* I need this, can't figure out a way to do it with bootstrap only. Really, most of it is the damn footer. */
