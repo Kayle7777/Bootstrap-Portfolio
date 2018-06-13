@@ -122,7 +122,7 @@ textarea[name="message"] {
   left:0;
 }
 
-/* I need this, can't figure out a way to do it with bootstrap only */
+/* I need this, can't figure out a way to do it with bootstrap only. Really, most of it is the damn footer. */
 
 @media screen and (max-height: 900px) {
   .footer {
