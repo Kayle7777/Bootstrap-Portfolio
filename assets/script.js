@@ -16,8 +16,10 @@ function changeVideo(vId){
 // My function
 
 function play() {
-  var audio = document.getElementById("audioButton");
-  audio.style = "visibility: visible";
+  var audio = document.getElementById("hiddenAudio");
   audio.play();
-  document.getElementById("textarea").value = "I don't know how to do forms! lol! :) :)"
+}
+
+function bgAnimate() {
+  $('#bg1').fadeOut(50000);
 }

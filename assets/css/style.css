@@ -10,17 +10,29 @@
   align-items: center;
 }
 
-#bodyHeader {
+
+#hiddenAudio {
+  position:absolute;
+  left:-9999px;
 }
 
-#audioButton {
-  visibility:hidden;
-}
-
-body {
-  background-color: #ffffff;
+.bg-class {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
   background-size: auto, cover;
+}
+
+#bg1 {
   background-image: url("../images/what-the-hex.png");
+  z-index: -1;
+}
+
+#bg2 {
+  background-image: url("../images/secret-bg.jpg");
+  z-index: -2;
 }
 
 
@@ -102,8 +114,7 @@ textarea[name="message"] {
 }
 
 
-footer {
-  margin-top:75px;
+.footer {
   border-top: 5px solid #4aaaa5;
   background-color: #bfbfbf;
 }
