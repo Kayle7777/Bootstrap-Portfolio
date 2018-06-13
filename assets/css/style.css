@@ -134,6 +134,9 @@ textarea[name="message"] {
   #myName {
     height:50px;
   }
+  .footer {
+    position:relative;
+  }
 }
 
 @media screen and (max-width: 460px) {
