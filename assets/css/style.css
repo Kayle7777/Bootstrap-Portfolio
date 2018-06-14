@@ -22,7 +22,7 @@
   bottom:0;
   left:0;
   right:0;
-  background-size: auto, cover;
+  background-size: auto, contain;
 }
 
 #bg1 {
@@ -72,7 +72,7 @@ header {
 
 .wrapper {
   max-width: 960px;
-  margin-top: 30px;
+  margin: 30px auto;
   border: 0 solid white;
   background-color: #ffffff;
 }
@@ -117,16 +117,17 @@ textarea[name="message"] {
 .footer {
   border-top: 5px solid #4aaaa5;
   background-color: #bfbfbf;
-  /* position:absolute; */
+  position:absolute;
   bottom:0;
   left:0;
 }
 
 /* I need this, can't figure out a way to do it with bootstrap only. Really, most of it is the damn footer. */
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 860px) {
   .footer {
     position:relative;
+    margin-top:20px;
     }
   }
 
