@@ -117,7 +117,7 @@ textarea[name="message"] {
 .footer {
   border-top: 5px solid #4aaaa5;
   background-color: #bfbfbf;
-  position:absolute;
+  /* position:absolute; */
   bottom:0;
   left:0;
 }
