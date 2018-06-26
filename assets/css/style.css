@@ -22,7 +22,7 @@
   bottom:0;
   left:0;
   right:0;
-  background-size: auto, contain;
+  background-repeat: repeat;
 }
 
 #bg1 {
